@@ -1,0 +1,19 @@
+{
+  "pipeline": [
+    {
+      "step": "transform",
+      "description": "Multiply each number by 2",
+      "function": "double_numbers"
+    },
+    {
+      "step": "api_request",
+      "description": "Retrieve a random post from JSONPlaceholder",
+      "method": "GET",
+      "url": "https://jsonplaceholder.typicode.com/posts/1"
+    },
+    {
+      "step": "end",
+      "description": "Combine transformed data with API response and print results"
+    }
+  ]
+}
