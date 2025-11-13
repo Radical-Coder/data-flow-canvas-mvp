@@ -31,6 +31,15 @@ This repository contains a simple end-to-end pipeline specification for a Data F
    ```  
 
    The script will:  
+
+## Running in the browser  
+If you prefer to run the pipeline without Python, you can use the provided HTML file to run everything client-side. The file `run_in_browser.html` loads the sample data, doubles each number, fetches the sample post from JSONPlaceholder, and displays the combined result.  
+
+To run it:  
+1. Open `run_in_browser.html` directly in your browser (e.g. by clicking on it in the repository and selecting "Raw", or by cloning the repo and opening the file locally).  
+2. The page will display the doubled numbers and API response in JSON format.  
+
+Note: due to browser security policies, GitHub may block fetching `sample_data.json` when viewing the raw file via githubusercontent.com. If so, clone the repository and open the HTML file locally or serve it with a simple HTTP server.
    - Read numbers from `sample_data.json`.  
    - Double each number using the transform step.  
    - Fetch the sample post from the JSONPlaceholder API.  
